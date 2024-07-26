@@ -46,7 +46,7 @@ const Modale = ({ show, onClose, title, message }) => {
       className={showHideClassName}
       role="dialog"
       aria-modal="true"
-      aria-label="Employe ajouté avec succès"
+      aria-label="Modale windows validation"
     >
       <div className="content">
         <div className="modal-header">
@@ -118,7 +118,6 @@ export default App;
 - Node.js : 18.17.1
 - react: 18.3.1,
 - react-dom: 18.3.1,
-- thomas-vogeleisen-modale-component: 1.2.4
 
 ## Licence
 
