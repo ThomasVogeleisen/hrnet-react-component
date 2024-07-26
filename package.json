@@ -1,0 +1,37 @@
+{
+  "name": "thomas-vogeleisen-modale-component",
+  "description": "A modal component for the Hrnet project",
+  "author": "Thomas Vogeleisen",
+  "keywords": [
+    "react",
+    "component"
+  ],
+  "version": "1.2.1",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "rimraf dist && cross-env NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-react": "^7.14.5",
+    "cross-env": "^7.0.3",
+    "rimraf": "^3.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

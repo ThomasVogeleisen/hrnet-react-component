@@ -1,0 +1,12 @@
+# standard ignores
+
+node_modules/
+public/
+src/
+.eslintrc.cjs
+.gitignore
+babel.config.json
+index.html 
+package-lock.json
+vite.config.js
+.npmignore
