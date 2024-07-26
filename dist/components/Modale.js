@@ -31,7 +31,7 @@ const Modale = _ref => {
     className: showHideClassName,
     role: "dialog",
     "aria-modal": "true",
-    "aria-label": "Employe ajout\xE9 avec succ\xE8s"
+    "aria-label": "Modale windows validation"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "content"
   }, /*#__PURE__*/_react.default.createElement("div", {

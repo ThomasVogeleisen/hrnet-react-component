@@ -22,7 +22,7 @@ const Modale = ({ show, onClose, title, message }) => {
       className={showHideClassName}
       role="dialog"
       aria-modal="true"
-      aria-label="Employe ajouté avec succès"
+      aria-label="Modale windows validation"
     >
       <div className="content">
         <div className="modal-header">

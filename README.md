@@ -1,6 +1,6 @@
 # thomas-vogeleisen-modale-component
 
-React component for OC Hrnet Project
+OpenClassooms P14 - React component for Hrnet Project
 
 ## Author
 
@@ -8,10 +8,10 @@ React component for OC Hrnet Project
 
 ### Description
 
-This is React component render a modale. Build for [HRnet app](https://github.com/OpenClassrooms-Student-Center/P12_Front-end), an [Openclassroom](https://openclassrooms.com/) project for the training "Application Developer - JavaScript React"
+This is a React component for render a modale. Build for [HRnet app](https://github.com/OpenClassrooms-Student-Center/P12_Front-end), an [Openclassroom](https://openclassrooms.com/) project from "Application Developer - JavaScript React"
 
-- The componant on Github [here](https://github.com/ThomasVogeleisen/hrnet-react-component)
-- The componant on NPM : [here](https://www.npmjs.com/package/thomas-vogeleisen-modale-component)
+- The component on Github [here](https://github.com/ThomasVogeleisen/hrnet-react-component)
+- The component on NPM : [here](https://www.npmjs.com/package/thomas-vogeleisen-modale-component)
 
 ### Installation
 
@@ -90,7 +90,12 @@ function App() {
 
   return (
     <>
-      <Modale show={showModal} onClose={handleCloseModal} />
+      <Modale
+        show={showModal}
+        onClose={handleCloseModal}
+        title="YourTitle"
+        message="Your message"
+      />
       <button onClick={handleOpenModal}>Open Modale</button>
     </>
   );
@@ -113,7 +118,7 @@ export default App;
 - Node.js : 18.17.1
 - react: 18.3.1,
 - react-dom: 18.3.1,
-- thomas-vogeleisen-modale-component: 1.2.3
+- thomas-vogeleisen-modale-component: 1.2.4
 
 ## Licence
 
