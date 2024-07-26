@@ -14,13 +14,17 @@ function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e
  * @param {Object} props - Les propriétés passées au composant Modale.
  * @param {boolean} props.show - L'état d'affichage de la modale.
  * @param {function} props.onClose - La fonction à appeler pour fermer la modale.
+ * @param {string} props.title - Le titre de la modale.
+ * @param {string} props.message - Le message à afficher dans la modale.
  * @returns {JSX.Element}
  */
 
 const Modale = _ref => {
   let {
     show,
-    onClose
+    onClose,
+    title,
+    message
   } = _ref;
   const showHideClassName = show ? "bground show-modale" : "bground hide-modale";
   return /*#__PURE__*/_react.default.createElement("div", {
@@ -32,7 +36,7 @@ const Modale = _ref => {
     className: "content"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-header"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Employee Created!"), /*#__PURE__*/_react.default.createElement("span", {
+  }, /*#__PURE__*/_react.default.createElement("h2", null, title), /*#__PURE__*/_react.default.createElement("span", {
     type: "button",
     className: "close",
     "data-dismiss": "modal",
@@ -41,7 +45,7 @@ const Modale = _ref => {
     "aria-hidden": "true"
   }, "\xD7")), /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-body"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "You have successfully added a new employee."), /*#__PURE__*/_react.default.createElement("button", {
+  }, /*#__PURE__*/_react.default.createElement("p", null, message), /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     className: "modal-btn",
     onClick: onClose

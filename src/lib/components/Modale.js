@@ -8,10 +8,12 @@ import "./style.css";
  * @param {Object} props - Les propriétés passées au composant Modale.
  * @param {boolean} props.show - L'état d'affichage de la modale.
  * @param {function} props.onClose - La fonction à appeler pour fermer la modale.
+ * @param {string} props.title - Le titre de la modale.
+ * @param {string} props.message - Le message à afficher dans la modale.
  * @returns {JSX.Element}
  */
 
-const Modale = ({ show, onClose }) => {
+const Modale = ({ show, onClose, title, message }) => {
   const showHideClassName = show
     ? "bground show-modale"
     : "bground hide-modale";
@@ -24,7 +26,7 @@ const Modale = ({ show, onClose }) => {
     >
       <div className="content">
         <div className="modal-header">
-          <h2>Employee Created!</h2>
+          <h2>{title}</h2>
           <span
             type="button"
             className="close"
@@ -37,7 +39,7 @@ const Modale = ({ show, onClose }) => {
           </span>
         </div>
         <div className="modal-body">
-          <p>You have successfully added a new employee.</p>
+          <p>{message}</p>
           <button type="button" className="modal-btn" onClick={onClose}>
             Close
           </button>

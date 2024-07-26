@@ -8,21 +8,17 @@ React component for OC Hrnet Project
 
 ### Description
 
-This is a React component that renders a modale. Build for [HRnet app](https://github.com/OpenClassrooms-Student-Center/P12_Front-end), an [Openclassroom](https://openclassrooms.com/) project for the training "Application Developer - JavaScript React"
+This is React component render a modale. Build for [HRnet app](https://github.com/OpenClassrooms-Student-Center/P12_Front-end), an [Openclassroom](https://openclassrooms.com/) project for the training "Application Developer - JavaScript React"
 
-- The componant on Github [here](https://github.com/Stv-devl/react-simple-table-component)
-- The componant on NPM : [here](https://www.npmjs.com/package/react-simple-table-component-v1)
-
-### Built-with
-
-- [React](https://reactjs.org/)
+- The componant on Github [here](https://github.com/ThomasVogeleisen/hrnet-react-component)
+- The componant on NPM : [here](https://www.npmjs.com/package/thomas-vogeleisen-modale-component)
 
 ### Installation
 
 Install the component :
 
 ```bash
-npm i thomas-vogeleisen-modale-component
+npm install thomas-vogeleisen-modale-component
 ```
 
 ### The Modale component
@@ -41,7 +37,7 @@ import "./style.css";
  * @returns {JSX.Element}
  */
 
-const Modale = ({ show, onClose }) => {
+const Modale = ({ show, onClose, title, message }) => {
   const showHideClassName = show
     ? "bground show-modale"
     : "bground hide-modale";
@@ -54,7 +50,7 @@ const Modale = ({ show, onClose }) => {
     >
       <div className="content">
         <div className="modal-header">
-          <h2>Employee Created!</h2>
+          <h2>{title}</h2>
           <span
             type="button"
             className="close"
@@ -67,7 +63,7 @@ const Modale = ({ show, onClose }) => {
           </span>
         </div>
         <div className="modal-body">
-          <p>You have successfully added a new employee.</p>
+          <p>{message}</p>
           <button type="button" className="modal-btn" onClick={onClose}>
             Close
           </button>
@@ -80,7 +76,7 @@ const Modale = ({ show, onClose }) => {
 export default Modale;
 ```
 
-### Simple examples to use
+### Simple example to use
 
 ```javascript
 import React from "react";
@@ -109,11 +105,16 @@ export default App;
 | ---------------- | ------ | ------------------------------------------ |
 | **showModal**    | bool   | To display or not the modal.               |
 | **setShowModal** | funct  | A function to set showModal true or false. |
-| **Message**      | string | Message in the modal.                      |
+| **title**        | string | Title for the modal.                       |
+| **message**      | string | Message in the modal.                      |
 
 ## Dependencies
 
 - Node.js : 18.17.1
 - react: 18.3.1,
 - react-dom: 18.3.1,
-- thomas-vogeleisen-modale-component: 1.2.1
+- thomas-vogeleisen-modale-component: 1.2.3
+
+## Licence
+
+- MIT
