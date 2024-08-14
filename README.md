@@ -34,6 +34,8 @@ import "./style.css";
  * @param {Object} props - Les propriétés passées au composant Modale.
  * @param {boolean} props.show - L'état d'affichage de la modale.
  * @param {function} props.onClose - La fonction à appeler pour fermer la modale.
+ * @param {string} props.title - Le titre de la modale.
+ * @param {string} props.message - Le texte dans la modale.
  * @returns {JSX.Element}
  */
 
